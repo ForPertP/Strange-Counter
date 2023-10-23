@@ -1,3 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+
+/*
+ * Complete the 'strangeCounter' function below.
+ *
+ * The function is expected to return a LONG_INTEGER.
+ * The function accepts LONG_INTEGER t as parameter.
+ */
+
 long strangeCounter(long t)
 {
     long result = 3;
