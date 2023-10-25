@@ -12,6 +12,7 @@ string rtrim(const string &);
  * The function accepts LONG_INTEGER t as parameter.
  */
 
+
 long strangeCounter(long t)
 {
     long result = 3;
@@ -26,7 +27,7 @@ long strangeCounter(long t)
 }
 
 
-long strangeCounter1(long t)
+long strangeCounter2(long t)
 {
     long result = 4;
 
@@ -56,3 +57,24 @@ int main()
     return 0;
 }
 
+string ltrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
+
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
+}
