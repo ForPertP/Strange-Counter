@@ -22,3 +22,20 @@ class Result
      * The function accepts LONG_INTEGER t as parameter.
      */
 }
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        long t = Convert.ToInt64(Console.ReadLine().Trim());
+
+        long result = Result.strangeCounter(t);
+
+        textWriter.WriteLine(result);
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
