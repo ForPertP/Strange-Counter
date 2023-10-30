@@ -12,9 +12,14 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
- 
-}
+    /*
+     * Complete the 'strangeCounter' function below.
+     *
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts LONG_INTEGER t as parameter.
+     */
 
+}
 
 public class Solution {
     public static void main(String[] args) throws IOException {
