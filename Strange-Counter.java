@@ -19,6 +19,18 @@ class Result {
      * The function accepts LONG_INTEGER t as parameter.
      */
 
+    public static long strangeCounter(long t) {
+    // Write your code here
+        long result = 3;
+
+        while (t > result) {
+            t -= result;
+            result *= 2;
+        }
+
+        return result - t + 1;
+    }
+
 }
 
 public class Solution {
